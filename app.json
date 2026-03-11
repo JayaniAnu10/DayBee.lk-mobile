@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "Smart Part-Time",
+    "slug": "smart-parttime-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0f1f3d"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.smartparttime.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0f1f3d"
+      },
+      "package": "com.smartparttime.app"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Smart Part-Time to access your photos."
+        }
+      ]
+    ],
+    "scheme": "smartparttime",
+    "extra": {
+      "router": {
+        "origin": false
+      }
+    }
+  }
+}
